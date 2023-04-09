@@ -83,7 +83,7 @@ export class Telemetry {
    * @returns instance of class
    */
   static create(config: TelConfigObject) {
-    if (config.hbInterval < 500) throw new Error("Interval alue is too low, needs to be >= 500");
+    if (config.hbInterval < 500) throw new Error("Interval value is too low, needs to be >= 500");
     if (config.hbTimeoutlimit <= 50 && config.hbTimeoutlimit >= config.hbInterval)
       throw new Error("Timeout value invalid, needs to be >= 50 and < heartbeat interval");
     return new Telemetry(config);
@@ -199,7 +199,7 @@ export class Telemetry {
    * if detected, downloads automatically
    * and resets the database
    */
-  async checkForCrashReport() {
+  private async checkForCrashReport() {
     //setup db
     this.indexedDB = window.indexedDB;
     this.request = this.indexedDB.open(this.dbName, 1);
@@ -255,7 +255,7 @@ export class Telemetry {
       const myBlob = new Blob(["EVENT LOG: \n", JSON.stringify(eventData), "\n APP LOG: \n", JSON.stringify(logData)], {
         type: "text/plain;charset=utf-8",
       });
-      saveAs(myBlob, "crash report.log");
+      saveAs(myBlob, "tel-light.log");
     }
   }
 

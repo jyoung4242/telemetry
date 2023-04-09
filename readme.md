@@ -113,7 +113,7 @@ const myTelConfig: TelConfigObject = {
 - databaseName:string (default: 'telemetry') - name of database stored in IndexedDB
 - hbInterval: number (must be >= 500) - milliseconds that the heartbeat is sent to your primary thread
 - hbTimeoutlimit: number (must be >= 50 and less than hbInterval) - this is how long your primary thread has to respond before crash report logged
-- verbose: boolean (default: false) - boolean flag to enable console logging of module
+- verbose? OPTIONAL: boolean (default: false) - boolean flag to enable console logging of module
 - useHeartbeat: boolean (default: true) - boolean flag to enable/diable the watchdog heartbeat
 
 ## Telemetry.create( config object: TelConfigObject) => returns class instance

@@ -1,0 +1,26 @@
+{
+  "name": "telemetry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@peasy-lib/peasy-ui": "^0.9.32",
+    "file-saver": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5",
+    "@types/node": "^18.15.11",
+    "json": "^11.0.0",
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1"
+  }
+}

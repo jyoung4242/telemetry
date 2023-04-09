@@ -75,6 +75,8 @@ document.addEventListener("pointerdown", (e: PointerEvent) => {
 
 - Choose custom events, or not custom events, to log as they occur so you can create a timeline of what is occurring and when
 
+![Telemetry Report](/report.png?raw=true "Telemetry Report")
+
 ## 🏗️ Create Logs of what is going on in the application
 
 - Tell the story of how your application is executing and its program flow by sprinkling logging calls throughout your code.

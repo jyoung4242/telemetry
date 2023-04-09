@@ -71,7 +71,7 @@ document.addEventListener("pointerdown", (e: PointerEvent) => {
 
 # 🔥 Features
 
-`Tel-light` is very straight forward. You can do the followings with it,
+`Tel-light` is very straight forward. You can do the followings with it:
 
 ## 🔢 Log desired events to a report
 
